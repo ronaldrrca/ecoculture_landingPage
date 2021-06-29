@@ -4,22 +4,27 @@ let phone = document.getElementById("phone");
 let email = document.getElementById("email");
 let city = document.getElementById("city");
 
+let error = "";
+
+
 
 
 function validate(){
     if (name.value === "") {
-        console.log("Escriba el nombre");
-    }else if(cellphone.value.length < 10 || cellphone.value.length > 10){
-        console.log("numero invalido");
-    }else if(phone.value.length < 7 || phone.value.length > 7){
-        console.log("numero invala");
-    }else if(email.value === ""){
-        console.log("Escriba un email valido");
-    }else if(city.value === ""){
-        console.log("Escriba su ciudad");
-    }else{
-        document.getElementById("submit").removeEventListener("click", preventSubmit);           
-    }
+            error = "Escriba el nombre";
+            document.getElementById("error").innerHTML = error;
+        }else if(cellphone.value.length < 10 || cellphone.value.length > 10){
+            error = "numero invalido";
+            document.getElementById("error").innerHTML = error;
+        }else if(email.value === ""){
+            error = "Escriba un email valido";
+            document.getElementById("error").innerHTML = error;
+        }else if(city.value === ""){
+            error = "Escriba su ciudad";
+            document.getElementById("error").innerHTML = error;
+        }else{
+            document.getElementById("submit").removeEventListener("click", preventSubmit);           
+        }
 }
 
 function preventSubmit(){

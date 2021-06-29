@@ -316,3 +316,9 @@ input[type=submit]{
     font-size: 1.8rem;
     text-align: justify;
 }
+
+#error{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color: red;
+}
