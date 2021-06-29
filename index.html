@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <script src="code.js" async="async"></script>
     <link rel="stylesheet" href="styles.css">
     
 </head>
@@ -21,7 +22,7 @@
                 <!-- <figcaption>Texto que se coloca debajo de las imagenes</figcaption> -->
             </figure>
         </section>
-
+        <p id="prueba"></p>
         <section id="title-subtitle">
             <article id="title">
                 <h1>Turismo de naturaleza</h1>
@@ -56,20 +57,20 @@
             <h2>Quiero que me contacten</h2>
             
                 <form action="">
-                    <label for="">Nombre*</label>
-                     <input type="text" autofocus required name="name">
-                    <label for="">Teléfono celular*</label>
-                     <input type="number" required name="cellphone" placeholder="Introduzca el número sin espacios ni guiones">
-                    <label for="">Teléfono fijo</label>
-                     <input type="number" name="phone" placeholder="Opcional">
-                    <label for="">Email*</label>
-                     <input type="email" required name="email">
-                    <label for="">Ciudad*</label>                  
-                     <input type="text" required name="city">
+                    <label for="name">Nombre*</label>
+                        <input id="name" type="text" autofocus required name="name">
+                    <label for="cellphone">Teléfono celular*</label>
+                        <input id="cellphone" type="number" required name="cellphone" placeholder="Introduzca el número sin espacios ni guiones">
+                    <label for="phone">Teléfono fijo</label>
+                        <input id="phone" type="number" name="phone" placeholder="Opcional">
+                    <label for="email">Email*</label>
+                        <input id="email" type="email" required name="email">
+                    <label for="city">Ciudad*</label>                  
+                        <input id="city" type="text" required name="city">
                      <p id="required">* Campos requeridos</p>
-                     <div id="submit"><input type="submit" value="Enviar"></div>
+                        <div id="submit"><input type="submit" value="Enviar"></div>
                  </form>
-            
+                 <p id="error"></p>
            
         </section>  
            

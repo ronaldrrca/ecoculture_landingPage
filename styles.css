@@ -172,19 +172,14 @@ footer{
     /* background-color: darkolivegreen; */
 }
 
-#form-container{
-    border: 1px solid red;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: flex-start;
-    /* align-items: center; */
-}
+
 
 #social-media{
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    padding: 1rem;
+    align-items: center;
+    
+    padding: 1.5rem 1rem 1rem 1rem;
 }
 
 #social-media img{
