@@ -8,13 +8,13 @@ let error = "";
 /*Validación del formulario */
 function validate(){
     if (name.value === "") {
-            error = "Escriba el nombre";
+            error = "Escriba su nombre";
             document.getElementById("error").innerHTML = error;
         }else if(cellphone.value.length < 10 || cellphone.value.length > 10){
-            error = "numero invalido";
+            error = "Ingrese los 10 digitos";
             document.getElementById("error").innerHTML = error;
         }else if(email.value === ""){
-            error = "Escriba un email valido";
+            error = "Ingrese un email valido";
             document.getElementById("error").innerHTML = error;
         }else if(city.value === ""){
             error = "Escriba su ciudad";

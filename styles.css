@@ -26,11 +26,13 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
+    
 }
 
 body{
     width: 100vw;
     height: auto;
+    
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
@@ -62,13 +64,12 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: black;
     color: white;
 }
 
 #logo-header{
     width: 40%;
-    height: 15rem;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,25 +88,25 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 #title{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 10rem;
+    height: 55%;
     padding-top: 1rem;
-    
+    /* background-color: #333; */
 }
 
 #title h1{
-    text-align: right;
+    text-align: center;
     font-family: 'Merienda', cursive;
     font-size: 2.5rem;
     color: var(--green);
-    padding-right: 3rem;
+    /* padding-right: 3rem; */
+    /* background-color: var(--blue); */
     /* font-family: 'Yellowtail', cursive; */
 }
 
@@ -115,11 +116,11 @@ footer{
     justify-content: flex-end;
     /* align-items: center; */
     width: 100%;
-    height: 5rem;
-    padding-right: 3rem;
+    height: 45%;
+    padding-right: 4.3rem;
     padding-bottom: 1.5rem;
- 
-}
+    /* background-color: green; */
+ }
 
 #subtitle h2{
     font-size: 1.5rem;
@@ -135,9 +136,9 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 255px;
+    height: auto;
     /* padding: 0.5rem; */
-   
+    
     /* border: 3px solid red; */
 }
 
@@ -148,7 +149,7 @@ footer{
 
 #image #leftRow{
     position: absolute;
-    top: 127,5px;
+    top: 127.5;
     left: 0;
     width: 8rem;
     opacity: 0.4;
@@ -157,7 +158,7 @@ footer{
 
 #image #rightRow{
     position: absolute;
-    top: 127,5;
+    top: 127.5;
     right: 0;
     width: 8rem;
     opacity: 0.4;
@@ -231,7 +232,7 @@ footer{
     align-items: center;
     padding: 1rem;
     flex-direction: column;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
 }
 
 #credits small{
@@ -281,6 +282,8 @@ form{
     border: 1px solid #333;
 }
 
+
+
 #form h2{
     font-size: 2rem;
     text-align: center;
@@ -293,15 +296,24 @@ input[type=email]{
     width: 100%;
     height: 3rem;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-left: 1rem;
-    
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus
+{
+  /* border: solid 0.15em var(--pink); */
+  /* border-radius: 0.5em; */
+  background: var(--pink);
+  color: #ffffff;
 }
 
 label{
     width: 100%;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #submit{
@@ -309,9 +321,10 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-   
-}
+   }
 
+   
+ 
 input[type=submit]{
    padding: 1rem 3rem 1rem 3rem;
    cursor: pointer;
@@ -319,6 +332,10 @@ input[type=submit]{
    background-color: var(--blue);
    font-weight: bold;
    border-radius: 0.5rem;
+}
+
+input[type=submit]:hover{ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    background-color: var(--yellow);
 }
 
 #required{
@@ -345,7 +362,149 @@ input[type=submit]{
 }
 
 #error{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 1rem;
     color: red;
+}
+
+footer #social-media{
+    background-color: #ffffff;
+}
+
+footer #contact-information{
+    background-color: var(--pink);
+}
+
+footer #credits{
+    background-color: var(--pink);
+}
+
+footer hr{
+    color: white;
+}
+
+#social-media img:hover{
+    display: none;
+}
+
+
+@media (min-width: 760px){
+    #logo-header{
+        width: 20%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid green; */
+        padding-top: 0.5rem;
+    }
+
+    #title-subtitle{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* border: 1px solid orange; */
+    }
+
+    #title{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 50%;
+        padding-top: 1rem;
+        /* border: 1px solid #333; */
+    }
+
+    #title h1{
+        font-size: 3rem;
+    }
+
+    #subtitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        /* border: 1px solid green; */
+     }
+
+     #subtitle h2{
+         /* display: inline-block; */
+         width: auto;
+         font-size: 2rem;
+        
+     }
+
+     #benefits{
+         width: 50%;
+         display: block;
+         float: left;
+     }
+
+     #form{
+         width: 48.5%;
+         
+         display: block;
+         float: left;
+         min-height: 531px;
+         margin-left: 1rem;
+     }
+
+    
+     main{
+         position: relative;
+     }
+
+     #additional-info{
+         width: 50%;
+         float: left;
+         /* background-color: red; */
+         position: absolute;
+         top: 802px;
+     } 
+
+     #image{
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        /* padding: 0.5rem; */
+        
+        /* border: 3px solid red; */
+    }
+
+    footer{
+        position: relative;
+    }
+
+    body{
+        padding: 1rem;
+    }
+
+    input[type=text],
+    input[type=number],
+    input[type=email]{
+    width: 100%;
+    height: 3.1rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.7rem;
+    padding-left: 1rem;
+    -moz-appearance:textfield; /*Elimina las flechas en los campos tipo number*/
+}
+
+label{
+    width: 100%;
+    display: block;
+    font-size: 1.7rem;
+}
+
+
+    
 }
