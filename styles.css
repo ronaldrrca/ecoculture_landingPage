@@ -13,7 +13,7 @@
     --green: #94C11F;
     --pink: #EB5B5E;
     --brown: #936037;
-    
+
 }
 
 
@@ -26,24 +26,24 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
-    
+
 }
 
 body{
     width: 100vw;
     height: auto;
-    
+
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "footer";
 }
 
 header, main, footer{
-   
+
     font-size: 2rem;
 }
 
@@ -59,7 +59,7 @@ header{
 
 main{
  grid-area: main;
- 
+
 }
 
 footer{
@@ -126,7 +126,7 @@ footer{
     font-size: 1.5rem;
     color: var(--brown);
     text-align: right;
-  
+
     width: 100%;
 }
 
@@ -138,7 +138,7 @@ footer{
     width: 100%;
     height: auto;
     /* padding: 0.5rem; */
-    
+
     /* border: 3px solid red; */
 }
 
@@ -193,8 +193,8 @@ footer{
     height: auto;
     color: black;
     padding: 2rem 1.2rem;
-   
-    
+
+
     /* background-color: darkolivegreen; */
 }
 
@@ -204,7 +204,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
     padding: 1.5rem 1rem 1rem 1rem;
 }
 
@@ -263,7 +263,7 @@ main section{
     justify-content:center;
     align-items: center;
     margin-top: 2rem;
-   
+
 }
 
 #whatsapp img{
@@ -323,8 +323,8 @@ label{
     align-items: center;
    }
 
-   
- 
+
+
 input[type=submit]{
    padding: 1rem 3rem 1rem 3rem;
    cursor: pointer;
@@ -334,8 +334,8 @@ input[type=submit]{
    border-radius: 0.5rem;
 }
 
-input[type=submit]:hover{ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-    background-color: var(--yellow);
+input[type=submit]:hover { 
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.2); /*Definir el color de la sombra*/
 }
 
 #required{
@@ -383,8 +383,8 @@ footer hr{
     color: white;
 }
 
-#social-media img:hover{
-    display: none;
+#social-media img:hover{ /*Corregir el desajuste en el hover*/
+    width: 3rem;
 }
 
 
@@ -437,7 +437,7 @@ footer hr{
          /* display: inline-block; */
          width: auto;
          font-size: 2rem;
-        
+
      }
 
      #benefits{
@@ -448,14 +448,14 @@ footer hr{
 
      #form{
          width: 48.5%;
-         
+
          display: block;
          float: left;
          min-height: 531px;
          margin-left: 1rem;
      }
 
-    
+
      main{
          position: relative;
      }
@@ -466,7 +466,7 @@ footer hr{
          /* background-color: red; */
          position: absolute;
          top: 802px;
-     } 
+     }
 
      #image{
         /* position: relative; */
@@ -476,7 +476,7 @@ footer hr{
         width: 100%;
         height: auto;
         /* padding: 0.5rem; */
-        
+
         /* border: 3px solid red; */
     }
 
@@ -506,5 +506,5 @@ label{
 }
 
 
-    
+
 }
