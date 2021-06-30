@@ -36,6 +36,7 @@ document.getElementById("submit").addEventListener("click", preventSubmit);
 let images = ["img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10"]; 
 let index = 0;
 let activeImage = document.getElementById("activeImage");
+let moveImage = images[index + 1];
 
 setInterval(() => {
     let choosenImage = "./assets/images/" + images[index] + ".jpg";
@@ -45,5 +46,28 @@ setInterval(() => {
     if(index >= images.length){
         index = 0;
     }
-}, 5000);
+}, 6000);
+
+
+/*Flechas para pasar imagenes */
+let leftRow = document.getElementById("leftRow");
+let rightRow = document.getElementById("rightRow");
+
+rightRow.addEventListener("click", function(){
+    index++;
+    if(index >= images.length){
+        index = 0;
+    }
+    activeImage.setAttribute("src", "./assets/images/" + images[index] + ".jpg");
+});
+
+leftRow.addEventListener("click", function(){
+    index--;
+    if(index <= 0){
+        index = 9;
+    }
+    activeImage.setAttribute("src", "./assets/images/" + images[index] + ".jpg");
+});
+
+
 
