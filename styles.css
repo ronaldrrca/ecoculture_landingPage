@@ -59,7 +59,7 @@ header{
 
 main{
  grid-area: main;
-
+ 
 }
 
 footer{
@@ -147,21 +147,31 @@ footer{
 
 }
 
-#image #leftRow{
+#image #leftRow, #image #rightRow{
     position: absolute;
     top: 127;
-    left: 0;
     width: 8rem;
     opacity: 0.4;
+    cursor: pointer;
 }
 
+#leftRow{
+    left: 0;
+}
 
-#image #rightRow{
-    position: absolute;
-    top: 127;
+#rightRow{
     right: 0;
-    width: 8rem;
-    opacity: 0.4;
+   
+}
+
+#image #leftRow:hover{
+    /* background-color: #ccc; */
+    opacity: 1;
+} 
+
+#image #rightRow:hover{
+    /* background-color: #ccc; */
+    opacity: 1;
 }
 
 
@@ -169,13 +179,14 @@ footer{
     width: 100%;
     height: auto;
     padding: 2rem 1.2rem;
+    border: 0.2rem solid #ccc;
     /* background-color: orange; */
 }
 
 #benefits h2{
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #benefits p{
@@ -202,14 +213,23 @@ footer{
 
 #social-media{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+    height: 8rem;
     padding: 1.5rem 1rem 1rem 1rem;
 }
 
+#social-media article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    
+}
+
+
+
 #social-media img{
-    width: 4rem;
+    width: 3.8rem;
     cursor: pointer;
 }
 
@@ -259,7 +279,6 @@ main section{
     justify-content:center;
     align-items: center;
     margin-top: 2rem;
-
 }
 
 #whatsapp img{
@@ -268,8 +287,8 @@ main section{
 
 #whatsapp-link{
     font-size: 1.5rem;
-    text-decoration: none;
-    color: black;
+    font-weight: bold;
+    color: var(--blue);
     cursor: pointer;
 }
 
@@ -329,8 +348,10 @@ input[type=submit]{
    border-radius: 0.5rem;
 }
 
-input[type=submit]:hover {
-    box-shadow: 6px 6px rgba(0, 0, 0, 0.2); 
+input[type=submit]:hover { 
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.2) inset;
+    color: #ffffff;
+    transition: all 0.4s;
 }
 
 #required{
@@ -338,17 +359,18 @@ input[type=submit]:hover {
     margin-bottom: 1rem;
 }
 
-#additional-info{
+/* #additional-info{
     width: 100%;
     height: auto;
     padding: 2rem 1.2rem;
-   
-}
+     background-color: orange; */
+ 
 
-#additional-info h2{
+#additional-info{
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 #additional-info p{
@@ -378,12 +400,13 @@ footer hr{
     color: white;
 }
 
-#social-media img:hover{
-    width: 3rem;
+#social-media img:hover{ /*Corregir el desajuste en el hover*/
+    width: 4.5rem;
+    transition: all 0.3s;
 }
 
 
-/* @media (min-width: 760px){
+@media (min-width: 760px){
     #logo-header{
         width: 20%;
         height: auto;
@@ -437,30 +460,30 @@ footer hr{
 
      #benefits{
          width: 50%;
+         height: 53.2rem;
          display: block;
          float: left;
-     }
+    }
+
+    #additional-info{
+        margin-top: 2rem;
+    }
+
+    #whatsapp{
+        margin-top: 6rem;
+    }
+
+    #whatsapp-link{
+        font-size: 1.7rem;
+    }
 
      #form{
          width: 48.5%;
-
+         height: 53.2rem;
          display: block;
          float: left;
-         min-height: 531px;
+         /* min-height: 700px; */
          margin-left: 1rem;
-     }
-
-
-     main{
-         position: relative;
-     }
-
-     #additional-info{
-         width: 50%;
-         float: left;
-       
-         position: absolute;
-         top: 802px;
      }
 
      #image{
@@ -473,9 +496,9 @@ footer hr{
                
     }
 
-    footer{
+    /* footer{
         position: relative;
-    }
+    } */
 
     body{
         padding: 1rem;
@@ -488,8 +511,8 @@ footer hr{
     height: 3.1rem;
     margin-bottom: 1.2rem;
     font-size: 1.7rem;
-    padding-left: 1rem;
-    -moz-appearance:textfield; 
+    /* padding-left: 1rem; */
+    -moz-appearance:textfield; /*Elimina las flechas en los campos tipo number*/
 }
 
 label{
@@ -499,5 +522,36 @@ label{
 }
 
 
+}
 
-} */
+
+@media (min-width: 960px){
+    body{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #image{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #image img{
+        width: 80%;
+    } 
+
+    #image #leftRow{
+        width: 12rem;
+        top: 127;
+        left: 100;
+        
+    }
+    
+    
+    #image #rightRow{
+        width: 12rem;
+        top: 127;
+        right: 100;
+       
+    }
+}
