@@ -164,6 +164,8 @@ footer{
    
 }
 
+
+
 #image #leftRow:hover{
     /* background-color: #ccc; */
     opacity: 1;
@@ -261,11 +263,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-  
     flex-direction: column;
     font-size: 1.4rem;
     margin-bottom: 1rem;
     text-align: center;
+    line-height: 0.5rem;
 }
 
 
@@ -408,7 +410,7 @@ footer hr{
 }
 
 
-@media (min-width: 760px){
+@media (min-width: 761px){
     #logo-header{
         width: 20%;
         height: auto;
@@ -498,9 +500,7 @@ footer hr{
                
     }
 
-    /* footer{
-        position: relative;
-    } */
+   
 
     body{
         padding: 1rem;
@@ -523,6 +523,11 @@ label{
     font-size: 1.7rem;
 }
 
+/* #contact-information{
+    flex-direction: row;
+} */
+
+
 
 }
 
@@ -534,6 +539,8 @@ label{
     }
 
     #image{
+        position: relative;
+        width: 99.5%;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
@@ -542,22 +549,22 @@ label{
         width: 80%;
     } 
 
-    #image #leftRow{
-        width: 12rem;
-        top: 127;
-        left: 100;
+    /* #image #leftRow{
+       display: none;
         
     }
     
     
     #image #rightRow{
-        width: 12rem;
-        top: 127;
-        right: 100;
-       
-    }
+        display: none;
+    } */
+
+  
+
+   
 
    #form{
-       margin-left: 1.5rem;
+       margin-left: 1rem;
+       float: left;
    }
 }
