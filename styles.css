@@ -176,6 +176,8 @@ footer{
 
 
 #benefits{
+    display: block;
+    float: left;
     width: 100%;
     height: auto;
     padding: 2rem 1.2rem;
@@ -525,7 +527,7 @@ label{
 }
 
 
-@media (min-width: 960px){
+@media (min-width: 961px){
     body{
         padding-left: 3rem;
         padding-right: 3rem;
@@ -554,4 +556,8 @@ label{
         right: 100;
        
     }
+
+   #form{
+       margin-left: 1.5rem;
+   }
 }
