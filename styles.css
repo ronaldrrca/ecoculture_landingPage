@@ -32,7 +32,8 @@ html{
 body{
     width: 100vw;
     height: auto;
-
+    min-height: 360px;
+    max-width: 1300px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
@@ -147,23 +148,34 @@ footer{
 
 }
 
-#image #leftRow, #image #rightRow{
+#image #leftRow, #image #rightRow, #image #leftRowPink, #image #rightRowPink{
     position: absolute;
     top: 127;
     width: 8rem;
-    opacity: 0.4;
+    opacity: 0.6;
     cursor: pointer;
 }
 
-#leftRow{
+#leftRow, #leftRowPink{
     left: 0;
 }
 
-#rightRow{
+#rightRow, #rightRowPink{
     right: 0;
    
 }
 
+#leftRowPink, #rightRowPink{
+    display: none;
+}
+
+#leftRowPink:hover{
+    background-color: var(--pink);
+}
+
+#rightRowPink:hover{
+    background-color: var(--pink);
+}
 
 
 #image #leftRow:hover{
@@ -178,6 +190,7 @@ footer{
 
 
 #benefits{
+    position: relative;
     display: block;
     float: left;
     width: 100%;
@@ -185,6 +198,11 @@ footer{
     padding: 2rem 1.2rem;
     border: 0.2rem solid #ccc;
     /* background-color: orange; */
+}
+
+#benefits #map{
+    
+    width: 10rem;
 }
 
 #benefits h2{
@@ -196,6 +214,13 @@ footer{
 #benefits p{
     font-size: 1.8rem;
     text-align: justify;
+}
+
+#benefits #map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 #benefits img{
@@ -492,13 +517,15 @@ footer hr{
     }
 
      #form{
-         width: 48.5%;
+         width: calc(50% - 1rem);
          height: 53.2rem;
          display: block;
          float: left;
          /* min-height: 700px; */
          margin-left: 1rem;
      }
+
+    
 
      #image{
         
@@ -527,15 +554,22 @@ footer hr{
     -moz-appearance:textfield; /*Elimina las flechas en los campos tipo number*/
 }
 
-label{
+    label{
     width: 100%;
     display: block;
     font-size: 1.7rem;
 }
 
-/* #contact-information{
-    flex-direction: row;
-} */
+    #benefits #map{
+    display: none;
+}
+
+    #benefits{
+        background-image: url(./assets/images/mapa-opaco.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30rem;
+    }
 
 
 
@@ -550,7 +584,6 @@ label{
 
     #image{
         position: relative;
-        width: 99.5%;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
@@ -559,18 +592,15 @@ label{
         width: 80%;
     } 
 
-    /* #image #leftRow{
+    #image #leftRow, #image #rightRow{
        display: none;
-        
+    }
+
+    #image #leftRowPink, #image #rightRowPink{
+        display: block;
     }
     
-    
-    #image #rightRow{
-        display: none;
-    } */
-   
-
-   #form{
+      #form{
        margin-left: 1rem;
        float: left;
    }
@@ -578,6 +608,11 @@ label{
    footer #credits{
        flex-direction: row;
        flex-wrap: wrap;
+    }
+
+    form{
+        width: 85%;
+        margin: 0 auto;
     }
 
    
