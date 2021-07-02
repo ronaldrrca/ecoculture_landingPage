@@ -32,7 +32,7 @@ function preventSubmit(){
 document.getElementById("submit").addEventListener("click", preventSubmit);
 
 
-/* Slide imágenes*/
+/* Slide automático de imágenes*/
 let images = ["img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10"]; 
 let index = 0;
 let activeImage = document.getElementById("activeImage");
@@ -52,6 +52,8 @@ setInterval(() => {
 /*Flechas para pasar imagenes */
 let leftRow = document.getElementById("leftRow");
 let rightRow = document.getElementById("rightRow");
+let leftRowBlue = document.getElementById("leftRowBlue");
+let rightRowBlue = document.getElementById("rightRowBlue");
 
 rightRow.addEventListener("click", function(){
     index++;
@@ -68,6 +70,24 @@ leftRow.addEventListener("click", function(){
     }
     activeImage.setAttribute("src", "./assets/images/" + images[index] + ".jpg");
 });
+
+rightRowBlue.addEventListener("click", function(){
+    index++;
+    if(index >= images.length){
+        index = 0;
+    }
+    activeImage.setAttribute("src", "./assets/images/" + images[index] + ".jpg");
+});
+
+leftRowBlue.addEventListener("click", function(){
+    index--;
+    if(index <= 0){
+        index = 9;
+    }
+    activeImage.setAttribute("src", "./assets/images/" + images[index] + ".jpg");
+});
+
+
 
 
 

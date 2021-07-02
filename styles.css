@@ -148,7 +148,7 @@ footer{
 
 }
 
-#image #leftRow, #image #rightRow, #image #leftRowPink, #image #rightRowPink{
+#image #leftRow, #image #rightRow, #image #leftRowBlue, #image #rightRowBlue{
     position: absolute;
     top: 127;
     width: 8rem;
@@ -156,24 +156,24 @@ footer{
     cursor: pointer;
 }
 
-#leftRow, #leftRowPink{
+#leftRow, #leftRowBlue{
     left: 0;
 }
 
-#rightRow, #rightRowPink{
+#rightRow, #rightRowBlue{
     right: 0;
    
 }
 
-#leftRowPink, #rightRowPink{
+#leftRowBlue, #rightRowBlue{
     display: none;
 }
 
-#leftRowPink:hover{
+#leftRowBlue:hover{
     background-color: var(--pink);
 }
 
-#rightRowPink:hover{
+#rightRowBlue:hover{
     background-color: var(--pink);
 }
 
@@ -244,6 +244,14 @@ footer{
     display: flex;
     height: 8rem;
     padding: 1.5rem 1rem 1rem 1rem;
+}
+
+footer > p{
+    color: #000000;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+    /* background-color: purple; */
 }
 
 #social-media article{
@@ -416,6 +424,8 @@ input[type=submit]:hover {
 
 footer #social-media{
     background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1rem;
 }
 
 footer #contact-information{
@@ -596,7 +606,7 @@ footer hr{
        display: none;
     }
 
-    #image #leftRowPink, #image #rightRowPink{
+    #image #leftRowBlue, #image #rightRowBlue{
         display: block;
     }
     
