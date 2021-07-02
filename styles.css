@@ -254,8 +254,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     flex-direction: column;
+  
     /* margin-bottom: 5rem; */
 }
 
@@ -394,10 +395,19 @@ footer #social-media{
 
 footer #contact-information{
     background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 footer #credits{
     background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
 }
 
 footer hr{
@@ -558,13 +568,18 @@ label{
     #image #rightRow{
         display: none;
     } */
-
-  
-
    
 
    #form{
        margin-left: 1rem;
        float: left;
    }
+
+   footer #credits{
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+
+   
+
 }
