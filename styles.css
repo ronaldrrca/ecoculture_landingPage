@@ -250,6 +250,8 @@ footer{
 
 #social-media{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 8rem;
     padding: 1.5rem 1rem 1rem 1rem;
 }
@@ -268,7 +270,6 @@ footer > p{
     align-items: center;
     width: 25%;
     height: 100%;
-    
 }
 
 
@@ -441,7 +442,7 @@ footer #contact-information{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1.7rem 1rem 1rem 1rem;
 }
 
 footer #credits{
@@ -449,7 +450,7 @@ footer #credits{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     
 }
 
@@ -545,15 +546,7 @@ footer hr{
 
     
 
-     /* #image{
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    } */
-
+    
     #image{
         position: relative;
         padding-top: 2rem;
@@ -597,6 +590,10 @@ footer hr{
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 30rem;
+    }
+
+    #social-media article{
+       width: 15%;
     }
 
 
@@ -650,4 +647,11 @@ footer hr{
 
    
 
+}
+
+@media (min-width: 1000px){
+    body{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
 }
