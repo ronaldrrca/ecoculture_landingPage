@@ -26,7 +26,7 @@ mail($to, $subject, utf8_decode($message), $header);
 
 // header("Location:index.html");
 
-//Revisar bien los datos antes de la entrega
+
 
 
 ?>

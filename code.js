@@ -5,6 +5,12 @@ let email = document.getElementById("email");
 let city = document.getElementById("city");
 let error = "";
 
+
+function preventSubmit(){
+    document.getElementById("submit").preventDefault;  
+    validate();  
+}
+
 /*Validación del formulario */
 function validate(){
     if (name.value === "") {
@@ -24,10 +30,7 @@ function validate(){
         }
 }
 
-function preventSubmit(){
-    document.getElementById("submit").preventDefault;  
-    validate();  
-}
+
 
 document.getElementById("submit").addEventListener("click", preventSubmit);
 
