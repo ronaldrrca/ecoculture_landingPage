@@ -24,7 +24,7 @@
 }
 
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', 'historic';
     font-size: 62.5%;
     
 }
@@ -87,14 +87,11 @@ footer{
 
 #title-subtitle{
     width: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(./assets/images/img11.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
 }
 
 #title{
@@ -102,16 +99,16 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 55%;
-    padding-top: 1rem;
-    /* background-color: #333; */
+    height: 62%;
+    padding: 0.5rem;
+   
 }
 
 #title h1{
     text-align: center;
     font-family: 'Merienda', cursive;
-    font-size: 2.5rem;
-    color: #ffffff;
+    font-size: 1.8rem;
+    color: var(--green);
     font-weight: bold;
     /* padding-right: 3rem; */
     /* background-color: var(--blue); */
@@ -120,23 +117,28 @@ footer{
 
 #subtitle{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-end;
+    /* justify-content: center; */
     /* align-items: center; */
     width: 100%;
-    height: 45%;
-    padding-right: 4.3rem;
+    height: 38%;
+    /* padding-right: 4.3rem; */
     padding-bottom: 1.5rem;
-    /* background-color: green; */
+    
  }
 
 #subtitle h2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--brown);
     font-weight: bold;
     text-align: right;
-
+    
     width: 100%;
+    padding-right: 1rem;
 }
 
 #image{
@@ -203,15 +205,13 @@ footer{
     float: left;
     width: 100%;
     height: auto;
+    
     padding: 2rem 1.2rem;
     border: 0.2rem solid #ccc;
     /* background-color: orange; */
 }
 
-#benefits #map{
-    
-    width: 10rem;
-}
+
 
 #benefits h2{
     text-align: center;
@@ -224,11 +224,17 @@ footer{
     text-align: justify;
 }
 
-#benefits #map-container{
+#map-container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    padding: 1rem;
+}
+
+#map-container iframe{
+    width: 100%;
+    height: 40rem;
 }
 
 #benefits img{
@@ -239,6 +245,7 @@ footer{
 #form{
     width: 100%;
     height: auto;
+    min-height: 64rem;
     color: black;
     padding: 2rem 1.2rem;
 
@@ -354,7 +361,9 @@ form{
 
 input[type=text],
 input[type=number],
-input[type=email]{
+input[type=email],
+select
+{
     width: 100%;
     height: 3rem;
     margin-bottom: 1rem;
@@ -364,7 +373,8 @@ input[type=email]{
 
 input[type=text]:focus,
 input[type=number]:focus,
-input[type=email]:focus
+input[type=email]:focus,
+select
 {
  
   background: var(--pink);
@@ -438,7 +448,7 @@ footer #social-media{
 }
 
 footer #contact-information{
-    background-color: var(--pink);
+    background-color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -446,7 +456,7 @@ footer #contact-information{
 }
 
 footer #credits{
-    background-color: var(--pink);
+    background-color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -463,8 +473,14 @@ footer hr{
     transition: all 0.3s;
 }
 
+form textarea{
+    width: 100%;
+    height: 7rem;
+    resize: none;
+}
 
-@media (min-width: 761px){
+
+@media (min-width: 740px){
     #logo-header{
         width: 20%;
         height: auto;
@@ -488,14 +504,15 @@ footer hr{
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        width: 100%;
-        height: 50%;
+        /* width: 100%;
+        height: 50%; */
         padding-top: 1rem;
   
     }
 
     #title h1{
         font-size: 3rem;
+        padding-top: 2rem;
     }
 
     #subtitle{
@@ -503,8 +520,8 @@ footer hr{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
-        height: 50%;
+        /* width: 100%;
+        height: 50%; */
         padding: 0;
         
      }
@@ -518,7 +535,7 @@ footer hr{
 
      #benefits{
          width: 50%;
-         height: 53.2rem;
+         min-height: 64rem;
          display: block;
          float: left;
     }
@@ -537,7 +554,7 @@ footer hr{
 
      #form{
          width: calc(50% - 1rem);
-         height: 53.2rem;
+         /* height: 64rem; */
          display: block;
          float: left;
          /* min-height: 700px; */
@@ -566,7 +583,9 @@ footer hr{
 
     input[type=text],
     input[type=number],
-    input[type=email]{
+    input[type=email],
+    select
+    {
     width: 100%;
     height: 3.1rem;
     margin-bottom: 1.2rem;
@@ -581,30 +600,21 @@ footer hr{
     font-size: 1.7rem;
 }
 
-    #benefits #map{
-    display: none;
-}
 
-    #benefits{
-        background-image: url(./assets/images/mapa-opaco.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 30rem;
-    }
 
     #social-media article{
        width: 15%;
     }
 
-
+    
 
 }
 
 
 @media (min-width: 961px){
     body{
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
 
     /* #image{
@@ -640,18 +650,25 @@ footer hr{
         width: 85%;
         margin: 0 auto;
     }
-
+/* 
     #whatsapp{
         margin-top: 12rem;
-    }
+    } */
 
    
 
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1200px){
+    body{
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+}
+
+/* @media (min-width: 1000px){
     body{
         padding-left: 6rem;
         padding-right: 6rem;
     }
-}
+} */

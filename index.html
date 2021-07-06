@@ -30,7 +30,7 @@
             
             <article id="title">
                
-                <h1>Turismo de naturaleza</h1>
+                <h1>Turismo de Naturaleza, Agrícola y Educación Ambiental.</h1>
             </article>
             <article id="subtitle">
                 <h2>San Andrés</h2>
@@ -61,36 +61,47 @@
                 servicios de turismo de naturaleza, agroecología y educación ambiental diseñados para conocer, 
                 disfrutar y conservar la biodiversidad y la cultura del Archipiélago de San Andrés, Providencia 
                 y Santa Catalina.</p>
-            <article id="map-container">
-                <img id="map" src="./assets/images/mapa.png" alt="">
-            </article>
             <article id="whatsapp">
-                <img src="./assets/icons/whatsaap.svg" alt="">
-                <a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=+57 300 3581311" target="_blank">Envíanos un mensaje de WhatsApp</a>
-            </article>    
-        </section> 
-
-        <!-- <hr class="section-separator"> -->
+                    <img src="./assets/icons/whatsaap.svg" alt="">
+                    <a id="whatsapp-link" href="https://api.whatsapp.com/send?phone=+57 316 7777461" target="_blank">Envíanos un mensaje de WhatsApp</a>
+            </article>
+        </section > 
         <section id="form">
-            <h2>Quiero que me contacten</h2>
+            <h2>Formulario de contacto</h2>
             
                 <form action="index.html" method="GET">
                     <label for="name">Nombre*</label>
                         <input id="name" type="text" autofocus required name="name">
                     <label for="cellphone">Teléfono celular*</label>
                         <input id="cellphone" type="number" required name="cellphone" placeholder="Introduzca el número sin espacios ni guiones">
-                    <label for="phone">Teléfono fijo</label>
-                        <input id="phone" type="number" name="phone" placeholder="Opcional">
                     <label for="email">Email*</label>
                         <input id="email" type="email" required name="email">
-                    <label for="city">Ciudad*</label>                  
+                    <label for="city">Ciudad y País*</label>                  
                         <input id="city" type="text" required name="city">
+                    <label for="type">Tipo de solicitud</label>
+                    <select name="type" id="type">
+                        <option value="" selected disabled>Seleccione una opción</option>
+                        <option value="Quiero información">Quiero información</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                        <option value="Queja">Queja</option>
+                        <option value="Reclamo">Reclamo</option>
+                        <option value="Felicitaciones">Felicitaciones</option>
+                        <option value="Felicitaciones">Otro</option>
+                    </select>
+                    <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" name="message" placeholder="Escriba aquí su mensaje"></textarea>
                      <p id="required">* Campos requeridos</p>
                         <div id="submit"><input class="submit" type="submit" value="Enviar"></div>
                  </form>
                  <p id="error"></p>
            
-        </section>  
+        </section>
+        <section id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15575.71232741051!2d-81.7092522444928!3d12.586991460721872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f05a60874e9c2e9%3A0x83960c0ad1a6052d!2sAeropuerto%20Internacional%20Gustavo%20Rojas%20Pinilla!5e0!3m2!1ses!2sco!4v1625604990959!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- <hr class="section-separator"> -->
+          
            
    
     </main>
@@ -98,14 +109,16 @@
         <p id="followUs">Siguenos en...</p>
         <section id="social-media">
             
-            <article><a href="https://www.instagram.com/" target="_blank"><img src="./assets/icons/instagram.svg" alt=""></a></article>
+            <article><a href="https://www.instagram.com/ecocultureco/" target="_blank"><img src="./assets/icons/instagram.svg" alt=""></a></article>
             <article><a href="https://twitter.com/" target="_blank"><img src="./assets/icons/twitter.svg" alt=""></a></article>
-            <article><a href="https://www.facebook.com/" target="_blank"><img src="./assets/icons/facebook.svg" alt=""></a></article>
-            <article><a href="https://www.youtube.com/" target="_blank"><img src="./assets/icons/youtube.svg" alt=""></a></article>
+            <article><a href="https://www.facebook.com/EcoCultureCo/" target="_blank"><img src="./assets/icons/facebook.svg" alt=""></a></article>
+            <article><a href="https://www.youtube.com/channel/UCmISMx8ha9mUZFNLId8wnBA" target="_blank"><img src="./assets/icons/youtube.svg" alt=""></a></article>
         </section>
         <!-- <hr> -->
         <section id="contact-information">
-            <p>ECOSULTURE S.A.S. Calle 00, Caarrera 00 - 00, Archipiélago de San Andrés, Colombia.</p>
+            <p>ECOCULTURE S.A.S. San Luis, Vía Radar, Four Corner
+                San Andrés Isla. <br> Archipiélago de San Andrés, Providencia y Santa Catalina
+                Colombia.</p>
             <p>Teléfonos: 316 7777461</p>
             <p>Whatsaap: +57 316 7777461</p>
             <p>Email: contacto@ecoculture.com.co</p>
@@ -115,7 +128,8 @@
             <small>&copy; Ecoculture S.A.S. &nbsp;</small>
             <small>Desarrollado por: Ronald R. Rodríguez Campillo. &nbsp;</small>
             <small>Programa MiPyme se transforma. &nbsp;</small>
-            <small>SENA - Centro de Servicios y Gestión Empresarial. &nbsp;</small>
+            <small>Servicio Nacional de Aprendizaje - SENA. &nbsp;</small>
+            <small>Centro de Servicios y Gestión Empresarial. &nbsp;</small>
             <small>Regional Antioquia.</small>
          
         </section>
