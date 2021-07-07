@@ -7,6 +7,7 @@ let message = document.getElementById("message");
 let error = "";
 
 
+
 function preventSubmit(){
     document.getElementById("submit").preventDefault;  
     validate();  
@@ -27,7 +28,7 @@ function validate(){
             error = "Ingrese ciudad y país de residencia";
             document.getElementById("error").innerHTML = error;
         }else if(type.value === "invalido"){
-            error = "Seleccione una tipo de solicitud";
+            error = "Seleccione un tipo de solicitud";
             document.getElementById("error").innerHTML = error;
         }else if(message.value === ""){
             error = "Por favor redacte su mensaje";
