@@ -19,13 +19,15 @@
     #title{
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-        padding-top: 1rem;
+        align-items: center;
     }
 
     #title h1{
-        font-size: 3rem;
-        padding-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    #subtitle{
+        padding-bottom: 0;
     }
 
     #subtitle h2{
