@@ -13,9 +13,7 @@
     --green: #94C11F;
     --pink: #EB5B5E;
     --brown: #936037;
-
 }
-
 
 *{
     margin: 0;
@@ -23,18 +21,14 @@
     box-sizing: border-box;
 }
 
+/*Estilos generales______________________________________________________________________*/
+
 html{
     font-family: 'Segoe UI', 'historic';
     font-size: 62.5%;
-    
 }
 
 body{
-    width: 100vw;
-    height: auto;
-    min-height: 360px;
-    max-width: 1330px;
-    
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
@@ -42,27 +36,25 @@ body{
         "header"
         "main"
         "footer";
+        width: 100vw;
+        height: auto;
+        min-height: 360px;
+        max-width: 1330px;
 }
 
 header, main, footer{
-
     font-size: 2rem;
 }
 
 header{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     grid-area: header;
     margin-bottom: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-   
 }
 
 main{
- grid-area: main;
- 
+    grid-area: main;
 }
 
 footer{
@@ -71,27 +63,28 @@ footer{
 }
 
 #logo-header{
-    width: 40%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid green; */
+    width: 40%;
+    height: auto;
     padding-top: 0.5rem;
 }
 
+
+/*Estilos del header____________________________________________________________________*/
+
 #logo-header img{
     width: 10rem;
-    /* border: 3px solid purple; */
 }
 
 #title-subtitle{
-    width: 60%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 60%;
+    height: 100%;
 }
 
 #title{
@@ -101,7 +94,6 @@ footer{
     width: 100%;
     height: 62%;
     padding: 0.5rem;
-   
 }
 
 #title h1{
@@ -110,37 +102,32 @@ footer{
     font-size: 1.8rem;
     color: var(--green);
     font-weight: bold;
-    /* padding-right: 3rem; */
-    /* background-color: var(--blue); */
-    /* font-family: 'Yellowtail', cursive; */
 }
 
 #subtitle{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     width: 100%;
     height: 38%;
-    /* padding-right: 4.3rem; */
     padding-bottom: 1.5rem;
-    
- }
+}
 
 #subtitle h2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    width: 100%;
+    padding-right: 1rem;
     font-size: 1.5rem;
     color: var(--brown);
     font-weight: bold;
     text-align: right;
-    
-    width: 100%;
-    padding-right: 1rem;
 }
 
+
+/*Estilos del main______________________________________________________________________*/
+/*Estilos de la(s) imagen(es) principal*/
 #image{
     position: relative;
     display: flex;
@@ -148,14 +135,10 @@ footer{
     align-items: center;
     width: 100%;
     height: auto;
-    /* padding: 0.5rem; */
-
-    /* border: 3px solid red; */
 }
 
 #image img{
     width: 100%;
-
 }
 
 #image #leftRow, #image #rightRow, #image #leftRowBlue, #image #rightRowBlue{
@@ -187,31 +170,24 @@ footer{
     background-color: lightpink;
 }
 
-
 #image #leftRow:hover{
-    /* background-color: #ccc; */
     opacity: 1;
 } 
 
 #image #rightRow:hover{
-    /* background-color: #ccc; */
     opacity: 1;
 }
 
-
+/*Estilos del texto del contenido*/
 #benefits{
     position: relative;
     display: block;
     float: left;
     width: 100%;
     height: auto;
-    
     padding: 2rem 1.2rem;
     border: 0.2rem solid #ccc;
-    /* background-color: orange; */
 }
-
-
 
 #benefits h2{
     text-align: center;
@@ -242,116 +218,19 @@ footer{
     cursor: pointer;
 }
 
+/*Estilos del formulario*/
 #form{
     width: 100%;
     height: auto;
-    min-height: 64rem;
+    min-height: 66rem;
     color: black;
     padding: 2rem 1.2rem;
-
-
-    /* background-color: darkolivegreen; */
-}
-
-
-
-#social-media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    padding: 1.5rem 1rem 1rem 1rem;
-}
-
-footer > p{
-    color: #000000;
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 2rem;
-    /* background-color: purple; */
-}
-
-#social-media article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 100%;
-}
-
-
-
-#social-media img{
-    width: 3.8rem;
-    cursor: pointer;
-}
-
-#contact-information{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2rem 2rem;
-    flex-direction: column;
-}
-
-#contact-information p{
-    text-align: center;
-   margin-bottom: 0.7rem;
-}
-
-#credits{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 1rem; */
-    flex-direction: column;
-  
-    /* margin-bottom: 5rem; */
-}
-
-#credits small{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    line-height: 0.5rem;
-}
-
-
-main section{
-    border: 1px solid #ccc;
-    margin-bottom: 1rem;
-  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#whatsapp{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-#whatsapp img{
-    margin-right: 0.5rem;
-}
-
-#whatsapp-link{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--blue);
-    cursor: pointer;
 }
 
 form{
     padding: 2rem 1rem;
     border: 1px solid #333;
 }
-
-
 
 #form h2{
     font-size: 2rem;
@@ -376,7 +255,6 @@ input[type=number]:focus,
 input[type=email]:focus,
 select
 {
- 
   background: var(--pink);
   color: #ffffff;
 }
@@ -393,8 +271,6 @@ label{
     justify-content: center;
     align-items: center;
    }
-
-
 
 input[type=submit]{
    padding: 1rem 3rem 1rem 3rem;
@@ -413,21 +289,98 @@ input[type=submit]:hover {
 
 #required{
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-/* #additional-info{
-    width: 100%;
-    height: auto;
-    padding: 2rem 1.2rem;
-     background-color: orange; */
- 
+/*Estilos del footer__________________________________________________________________*/
+/*Estilos de las redes sociales*/
+#social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    padding: 1.5rem 1rem 1rem 1rem;
+}
+
+footer > p{
+    color: #000000;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#social-media article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+#social-media img{
+    width: 3.8rem;
+    cursor: pointer;
+}
+
+#contact-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    flex-direction: column;
+}
+
+#contact-information p{
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
+#credits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#credits small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+main section{
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#whatsapp{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#whatsapp img{
+    margin-right: 0.5rem;
+}
+
+#whatsapp-link{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blue);
+    cursor: pointer;
+}
 
 #additional-info{
     text-align: center;
     font-size: 2rem;
     padding-top: 2rem;
-    /* margin-bottom: 1.5rem; */
 }
 
 #additional-info p{
@@ -448,27 +401,26 @@ footer #social-media{
 }
 
 footer #contact-information{
-    background-color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.7rem 1rem 1rem 1rem;
+    background-color: var(--blue);
 }
 
 footer #credits{
-    background-color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem 1rem 1rem;
-    
+    background-color: var(--blue);
 }
 
 footer hr{
     color: white;
 }
 
-#social-media img:hover{ /*Corregir el desajuste en el hover*/
+#social-media img:hover{ 
     width: 4.5rem;
     transition: all 0.3s;
 }
@@ -480,195 +432,17 @@ form textarea{
 }
 
 
-@media (min-width: 740px){
-    #logo-header{
-        width: 20%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-        padding-top: 0.5rem;
-    }
-
-    #title-subtitle{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-
-    #title{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        /* width: 100%;
-        height: 50%; */
-        padding-top: 1rem;
-  
-    }
-
-    #title h1{
-        font-size: 3rem;
-        padding-top: 2rem;
-    }
-
+@media (min-width: 560px){
     #subtitle{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        /* width: 100%;
-        height: 50%; */
         padding: 0;
-        
-     }
-
-     #subtitle h2{
-        
-         width: auto;
-         font-size: 2rem;
-
-     }
-
-     #benefits{
-         width: 50%;
-         min-height: 64rem;
-         display: block;
-         float: left;
-    }
-
-    #additional-info{
-        margin-top: 2rem;
-    }
-
-    #whatsapp{
-        margin-top: 1rem;
-    }
-
-    #whatsapp-link{
-        font-size: 1.7rem;
-    }
-
-     #form{
-         width: calc(50% - 1rem);
-         /* height: 64rem; */
-         display: block;
-         float: left;
-         /* min-height: 700px; */
-         margin-left: 1rem;
-     }
-
-    
-
-    
-    #image{
-        position: relative;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    #image img{
-        width: 80%;
-        height: 30rem;
-    } 
-
-   
-
-    body{
-        padding: 1rem;
-    }
-
-    input[type=text],
-    input[type=number],
-    input[type=email],
-    select
-    {
-    width: 100%;
-    height: 3.1rem;
-    margin-bottom: 1.2rem;
-    font-size: 1.7rem;
-    /* padding-left: 1rem; */
-    -moz-appearance:textfield; /*Elimina las flechas en los campos tipo number*/
-}
-
-    label{
-    width: 100%;
-    display: block;
-    font-size: 1.7rem;
-}
-
-
-
-    #social-media article{
-       width: 15%;
-    }
-
-    
-
-}
-
-
-@media (min-width: 961px){
-    body{
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
-
-    /* #image{
-        position: relative;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    #image img{
-        width: 80%;
-        height: 30rem;
-    }  */
-
-    #image #leftRow, #image #rightRow{
-       display: none;
-    }
-
-    #image #leftRowBlue, #image #rightRowBlue{
-        display: block;
-    }
-    
-      #form{
-       margin-left: 1rem;
-       float: left;
-   }
-
-   footer #credits{
-       flex-direction: row;
-       flex-wrap: wrap;
-    }
-
-    form{
-        width: 85%;
-        margin: 0 auto;
-    }
-/* 
-    #whatsapp{
-        margin-top: 12rem;
-    } */
-
-   
-
-}
-
-@media (min-width: 1200px){
-    body{
-        padding-left: 20rem;
-        padding-right: 20rem;
     }
 }
 
-/* @media (min-width: 1000px){
-    body{
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
-} */
+
+
+
+
