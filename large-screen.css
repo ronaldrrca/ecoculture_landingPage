@@ -1,9 +1,13 @@
 @media (min-width: 961px){
     body{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    #image{
         padding-left: 10rem;
         padding-right: 10rem;
     }
-
   
     #image #leftRow, #image #rightRow{
        display: none;
@@ -11,6 +15,19 @@
 
     #image #leftRowBlue, #image #rightRowBlue{
         display: block;
+        width: 16rem;
+    }
+
+    #image #leftRowBlue{
+        margin-left: 1rem;
+    }
+
+    #image #rightRowBlue{
+        margin-right: 1rem;
+    }
+
+    #whatsapp{
+        margin-top: 5rem;
     }
     
     #form{

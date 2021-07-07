@@ -46,9 +46,17 @@
 
         <section id="benefits">
             <h2>Servicios</h2>
-            <p>Conoce y disfruta la biodiversidad y la cultura del archipiélago, 
-                con nuestra oferta de experiencias en <b>aviturismo, ecoturismo, turismo rural 
-                y de inmersión en la naturaleza y la cultura.</b></p>
+            <h3 class="benefits-subtitle">Turismo de naturaleza</h3>
+                <p>Conoce y disfruta la biodiversidad y la cultura del archipiélago, 
+                    con nuestra oferta de experiencias en aviturismo, ecoturismo, turismo rural 
+                    y de inmersión en la naturaleza y la cultura.</p>
+            <h3 class="benefits-subtitle">Agroecología</h3>
+                <p>Ofrecemos servicios especializados de consultoría ambiental y agroecológica.
+                    Asesoramos el diseño, montaje y operación de proyectos agroecológicos y 
+                    ambientales, rurales y urbanos.</p>
+            <h3 class="benefits-subtitle">Educación ambiental</h3>
+                <p>Promovemos la educación ambiental en diferentes contextos y poblaciones. Ofrecemos talleres 
+                    y capacitaciones según las necesidades del cliente. Pregunta por nuestra oferta de talleres para niños.</p>
             <h2 id="additional-info">Lo que hacemos</h2>
             <p>Promovemos el bienestar, el buen vivir y la sustentabilidad, mediante experiencias, productos y 
                 servicios de turismo de naturaleza, agroecología y educación ambiental diseñados para conocer, 
@@ -70,11 +78,11 @@
                         <input id="cellphone" type="number" required name="cellphone" placeholder="Introduzca el número sin espacios ni guiones">
                     <label for="email">Email*</label>
                         <input id="email" type="email" required name="email">
-                    <label for="city">Ciudad y País*</label>                  
-                        <input id="city" type="text" required name="city">
+                    <label for="cityCountry">Ciudad y País*</label>                  
+                        <input id="cityCountry" type="text" required name="cityCountry">
                     <label for="type">Tipo de solicitud</label>
-                    <select name="type" id="type">
-                        <option value="" selected disabled>Seleccione una opción</option>
+                    <select name="type" id="type" required>
+                        <option value="invalido" selected disabled>Seleccione una opción</option>
                         <option value="Quiero información">Quiero información</option>
                         <option value="Sugerencia">Sugerencia</option>
                         <option value="Queja">Queja</option>
@@ -83,11 +91,12 @@
                         <option value="Felicitaciones">Otro</option>
                     </select>
                     <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" name="message" placeholder="Escriba aquí su mensaje"></textarea>
-                     <p id="required">* Campos requeridos</p>
+                        <textarea id="message" name="message" required placeholder="Escriba aquí su mensaje"></textarea>
+                        <p id="required">* Campos requeridos</p>
                         <div id="submit"><input class="submit" type="submit" value="Enviar"></div>
+                        <p id="error"></p>
                  </form>
-                 <p id="error"></p>
+                 
            
         </section>
         <section id="map-container">

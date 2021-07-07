@@ -1,8 +1,9 @@
 let name = document.getElementById("name");
 let cellphone = document.getElementById("cellphone");
-let phone = document.getElementById("phone");
 let email = document.getElementById("email");
-let city = document.getElementById("city");
+let cityCountry = document.getElementById("cityCountry");
+let type = document.getElementById("type");
+let message = document.getElementById("message");
 let error = "";
 
 
@@ -14,16 +15,22 @@ function preventSubmit(){
 /*Validación del formulario */
 function validate(){
     if (name.value === "") {
-            error = "Escriba su nombre";
+            error = "Ingrese su nombre";
             document.getElementById("error").innerHTML = error;
         }else if(cellphone.value.length < 10 || cellphone.value.length > 10){
-            error = "Ingrese los 10 digitos";
+            error = "Ingrese los 10 digitos sin espacio ni guiones";
             document.getElementById("error").innerHTML = error;
         }else if(email.value === ""){
-            error = "Ingrese un email valido";
+            error = "Ingrese una dirección de correo electrónico válida";
             document.getElementById("error").innerHTML = error;
-        }else if(city.value === ""){
-            error = "Escriba su ciudad";
+        }else if(cityCountry.value === ""){
+            error = "Ingrese ciudad y país de residencia";
+            document.getElementById("error").innerHTML = error;
+        }else if(type.value === "invalido"){
+            error = "Seleccione una tipo de solicitud";
+            document.getElementById("error").innerHTML = error;
+        }else if(message.value === ""){
+            error = "Por favor redacte su mensaje";
             document.getElementById("error").innerHTML = error;
         }else{
             document.getElementById("submit").removeEventListener("click", preventSubmit);           

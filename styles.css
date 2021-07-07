@@ -38,7 +38,7 @@ body{
         "footer";
         width: 100vw;
         height: auto;
-        min-height: 360px;
+        min-width: 360px;
         max-width: 1330px;
 }
 
@@ -85,6 +85,7 @@ footer{
     flex-direction: column;
     width: 60%;
     height: 100%;
+    padding-right: 0.5rem;
 }
 
 #title{
@@ -98,7 +99,7 @@ footer{
 
 #title h1{
     text-align: center;
-    font-family: 'Merienda', cursive;
+    font-family: 'Segoe UI', 'historic';
     font-size: 1.8rem;
     color: var(--green);
     font-weight: bold;
@@ -141,11 +142,15 @@ footer{
     width: 100%;
 }
 
+#image #activeImage{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #image #leftRow, #image #rightRow, #image #leftRowBlue, #image #rightRowBlue{
     position: absolute;
     top: 127;
     width: 8rem;
-    opacity: 0.6;
+    opacity: 0.3;
     cursor: pointer;
 }
 
@@ -163,11 +168,11 @@ footer{
 }
 
 #leftRowBlue:hover{
-    background-color: lightpink;
+    background-color: #D5D8DC;
 }
 
 #rightRowBlue:hover{
-    background-color: lightpink;
+    background-color: #D5D8DC;
 }
 
 #image #leftRow:hover{
@@ -195,15 +200,30 @@ footer{
     margin-bottom: 1rem;
 }
 
-#benefits p{
+#benefits h3{
+    text-align: left;
     font-size: 1.8rem;
+    /* margin-bottom: 1rem; */
+}
+
+#benefits p{
+    font-size: 1.6rem;
     text-align: justify;
+}
+
+p b{
+    font-style: italic;
+}
+
+.benefits-subtitle{
+    margin-top: 1rem;
 }
 
 #map-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin-top: 2rem;
     padding: 1rem;
 }
@@ -222,7 +242,6 @@ footer{
 #form{
     width: 100%;
     height: auto;
-    min-height: 66rem;
     color: black;
     padding: 2rem 1.2rem;
 }
@@ -265,15 +284,22 @@ label{
     font-size: 1.3rem;
 }
 
+form textarea{
+    width: 100%;
+    height: 13rem;
+    resize: none;
+}
+
 #submit{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
    }
 
 input[type=submit]{
-   padding: 1rem 3rem 1rem 3rem;
+   padding: 1rem 8rem 1rem 8rem;
    cursor: pointer;
    font-size: 1.5rem;
    background-color: var(--blue);
@@ -348,6 +374,7 @@ footer > p{
     align-items: center;
     flex-direction: column;
     font-size: 1.4rem;
+    font-weight: bold;
     margin-bottom: 1rem;
     text-align: center;
     line-height: 0.5rem;
@@ -378,9 +405,9 @@ main section{
 }
 
 #additional-info{
+    margin-top: 1.2rem;
     text-align: center;
     font-size: 2rem;
-    padding-top: 2rem;
 }
 
 #additional-info p{
@@ -425,11 +452,7 @@ footer hr{
     transition: all 0.3s;
 }
 
-form textarea{
-    width: 100%;
-    height: 7rem;
-    resize: none;
-}
+
 
 
 @media (min-width: 560px){

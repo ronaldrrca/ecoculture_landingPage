@@ -36,8 +36,8 @@
      #benefits{
          display: block;
          float: left;
+         min-height: 74rem;
          width: 50%;
-         min-height: 66rem;
     }
 
     #additional-info{
@@ -54,6 +54,7 @@
 
      #form{
          width: calc(50% - 1rem);
+         min-height: 74rem;
          display: block;
          float: left;
          margin-left: 1rem;
