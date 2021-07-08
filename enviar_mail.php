@@ -23,7 +23,7 @@ $message .= "Mensaje: " . $text . " \r\n";
 
 
 
-$to = 'ronaldrrca@gmail.com';
+$to = 'contacto@ecoculture.com.co';
 $subject = $type;
 
 mail($to, $subject, $message, $header);
