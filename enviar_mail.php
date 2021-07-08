@@ -18,7 +18,7 @@ $message .= "Teléfono celular: " . $cellphone . " \r\n";
 $message .= "E-mail: " . $mail . " \r\n";
 $message .= "Ciudad y país: " . $cityCountry . " \r\n";
 $message .= "Tipo de solicitud: " . $type . " \r\n";
-$message .= "Enviado el " . date('d/m/Y', time());
+$message .= "Enviado el: " . date('d/m/Y', time()) . ", a las " . date("h:i:sa") . " \r\n";
 $message .= "Mensaje: " . $text . " \r\n";
 
 
