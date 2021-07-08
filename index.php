@@ -9,9 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecoculture S.A.S</title>
     <link rel="shortcut icon" href="#" /><!--Fixing favicon-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
     <script src="code.js" async="async"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 740px)"> 
@@ -71,7 +68,7 @@
         <section id="form">
             <h2>Formulario de contacto</h2>
             
-                <form action="index.html" method="GET">
+                <form action="enviar_mail.php" method="POST">
                     <label for="name">Nombre*</label>
                         <input id="name" type="text" autofocus required name="name">
                     <label for="cellphone">Teléfono celular*</label>
